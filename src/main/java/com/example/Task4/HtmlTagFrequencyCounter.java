@@ -1,5 +1,10 @@
 void main() {
-    String targetUrl = "https://example.com";
+    String targetUrl;
+
+    try (Scanner scanner = new Scanner(System.in)) {
+        System.out.print("Enter URL: ");
+        targetUrl = scanner.nextLine().trim();
+    }
 
     try {
         String html = fetchHTML(targetUrl);
