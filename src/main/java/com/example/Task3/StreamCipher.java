@@ -1,5 +1,5 @@
 void main() {
-    String filePath = "";
+    String filePath;
 
     try (Scanner scanner = new Scanner(System.in)) {
         System.out.print("Enter file path: ");
